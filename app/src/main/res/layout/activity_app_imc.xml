@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2F5ADD"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".AppImc">
+
+
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textSize="30dp"
+        android:text="Calculadora IMC"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center">
+    </TextView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="350dp"
+        android:layout_marginTop="30dp"
+        android:layout_height="400dp"
+        android:layout_gravity="center"
+        app:cardCornerRadius="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="PESO"
+                android:fontFamily="@font/inter_black"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="24dp"
+                android:layout_marginTop="20dp"></TextView>
+
+            <EditText
+                android:id="@+id/imc_peso"
+                android:gravity="center"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:hint="peso"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Altura"
+                android:gravity="center"
+                android:textSize="26dp"
+                android:fontFamily="@font/inter_black">
+            </TextView>
+
+            <EditText
+                android:id="@+id/imc_altura"
+                android:gravity="center"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:hint="altura"
+                />
+
+            <Button
+                android:id="@+id/imc_botao"
+                android:layout_width="120dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:text="resultado"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/imc_resultado"
+                android:layout_width="120dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="10dp"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>
